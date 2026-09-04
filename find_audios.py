@@ -27,6 +27,7 @@ for root, dirs, files in os.walk(ROOT):
         ext = os.path.splitext(filename)[1].lower()
 
         if ext in AUDIO_EXTENSIONS:
+#            full_path = "/storage/emulated/0" + os.path.relpath(os.path.join(root, filename),ROOT)
             full_path = os.path.join(root, filename)
             audio_files.append(full_path)
             print(f"found: {full_path}")
