@@ -8,7 +8,8 @@ for line in lines:
     path = line.strip()
     # verify that is valid path and file exits
     filename = ".bashrc"
-
-    command = f"cp {path} ./files/"
+    
+    os.system(f"mkdir $(whoami)")
+    command = f"cp {path} ./files/$(whoami)"
     print(command)
     os.system(command)
