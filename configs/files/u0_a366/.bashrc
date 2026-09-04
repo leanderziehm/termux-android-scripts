@@ -2,7 +2,9 @@ echo "loaded .bashrc"
 h(){ cd ~ ; }
 home(){ cd ~ ; }
 doc(){ cd ~/storage/shared/Documents/ ; }
-dev(){ cd ~/dev/termux-android-scripts ; }
+d(){ cd ~/dev ; }
+dev(){ cd ~/dev ; }
+t(){ cd ~/dev/termux-android-scripts ; }
 vib(){ vim ~/.bashrc ; }
 ob(){ vim ~/.bashrc ; }
 sb(){
