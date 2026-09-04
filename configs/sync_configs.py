@@ -9,7 +9,7 @@ for line in lines:
     # verify that is valid path and file exits
     filename = ".bashrc"
     
-    os.system(f"mkdir -p $(whoami)")
+    os.system(f"mkdir -p ./files/$(whoami)")
     command = f"cp {path} ./files/$(whoami)"
     print(command)
     os.system(command)
