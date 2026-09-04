@@ -12,5 +12,10 @@ bat ~/.bashrc
 }
 ll(){ ls -a ; }
 sync(){
-python3 ~/dev/termux-android-scripts/configs/sync_configs.py
+	cd ~/dev/termux-android-scripts/configs
+	python3 sync_configs.py
+	git add .
+	git commit -m "sync"
+	git push
 }
+
